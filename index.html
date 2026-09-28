@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Darwin — Personal Assistant</title>
+<meta name="description" content="A self-hosted personal assistant that summarises its owner's own mail and calendar. Single-user, private.">
+<!-- ↓↓↓ ВСТАВЬ СЮДА meta-тег из Google Search Console и удали эту строку-комментарий ↓↓↓ -->
+<!-- <meta name="google-site-verification" content="..."> -->
+<style>
+  :root {
+    --bg: #ffffff;
+    --fg: #1a1a1a;
+    --muted: #5c5c5c;
+    --rule: #e2e2e2;
+    --link: #2b5fd9;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #14161a;
+      --fg: #e8e8e8;
+      --muted: #a0a4ab;
+      --rule: #2a2e35;
+      --link: #7fa6ff;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #14161a;
+    --fg: #e8e8e8;
+    --muted: #a0a4ab;
+    --rule: #2a2e35;
+    --link: #7fa6ff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font: 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    -webkit-text-size-adjust: 100%;
+  }
+  main { max-width: 42rem; margin: 0 auto; padding: 4rem 16px 6rem; }
+  h1 { font-size: 1.9rem; line-height: 1.25; margin: 0 0 .35rem; letter-spacing: -.02em; }
+  .tagline { color: var(--muted); margin: 0 0 2.5rem; }
+  h2 { font-size: 1.05rem; margin: 2.25rem 0 .6rem; letter-spacing: -.01em; }
+  p { margin: 0 0 1rem; }
+  ul { margin: 0 0 1rem; padding-left: 1.25rem; }
+  li { margin-bottom: .4rem; }
+  a { color: var(--link); }
+  footer {
+    margin-top: 3rem; padding-top: 1.25rem;
+    border-top: 1px solid var(--rule);
+    color: var(--muted); font-size: .9rem;
+  }
+</style>
+</head>
+<body>
+<main>
+  <h1>Darwin</h1>
+  <p class="tagline">A self-hosted personal assistant. Single user: its owner.</p>
+
+  <h2>What it is</h2>
+  <p>
+    Darwin is a private assistant that runs on hardware its owner controls. It is not a product,
+    has no sign-up, and is not offered to anyone else. It reads its owner's own Gmail and Google
+    Calendar so it can answer questions about them and produce a short daily briefing.
+  </p>
+
+  <h2>What it does with Google data</h2>
+  <ul>
+    <li>Reads recent mail and calendar events for the signed-in account.</li>
+    <li>Summarises them into a daily digest delivered privately to the owner.</li>
+    <li>Sends or labels mail only when the owner explicitly asks it to.</li>
+  </ul>
+  <p>
+    It does not read anyone else's mailbox, and there are no other users to share anything with.
+  </p>
+
+  <h2>Privacy</h2>
+  <p>
+    The <a href="privacy.html">privacy policy</a> describes exactly which data is accessed,
+    where it is processed, and how to revoke access at any time.
+  </p>
+
+  <footer>
+    Personal project &middot; not affiliated with Google &middot; last updated 28 September 2026
+  </footer>
+</main>
+</body>
+</html>
