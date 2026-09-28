@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — Darwin</title>
+<meta name="description" content="How the Darwin personal assistant accesses, processes and retains Google account data.">
+<style>
+  :root {
+    --bg: #ffffff;
+    --fg: #1a1a1a;
+    --muted: #5c5c5c;
+    --rule: #e2e2e2;
+    --link: #2b5fd9;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #14161a;
+      --fg: #e8e8e8;
+      --muted: #a0a4ab;
+      --rule: #2a2e35;
+      --link: #7fa6ff;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #14161a;
+    --fg: #e8e8e8;
+    --muted: #a0a4ab;
+    --rule: #2a2e35;
+    --link: #7fa6ff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font: 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    -webkit-text-size-adjust: 100%;
+  }
+  main { max-width: 42rem; margin: 0 auto; padding: 4rem 16px 6rem; }
+  h1 { font-size: 1.8rem; line-height: 1.25; margin: 0 0 .3rem; letter-spacing: -.02em; }
+  .updated { color: var(--muted); margin: 0 0 2.5rem; font-size: .92rem; }
+  h2 { font-size: 1.05rem; margin: 2.25rem 0 .6rem; letter-spacing: -.01em; }
+  p { margin: 0 0 1rem; }
+  ul { margin: 0 0 1rem; padding-left: 1.25rem; }
+  li { margin-bottom: .4rem; }
+  a { color: var(--link); }
+  code {
+    font: .88em/1.4 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    background: color-mix(in srgb, var(--fg) 8%, transparent);
+    padding: .1em .35em; border-radius: 4px;
+  }
+  footer {
+    margin-top: 3rem; padding-top: 1.25rem;
+    border-top: 1px solid var(--rule);
+    color: var(--muted); font-size: .9rem;
+  }
+</style>
+</head>
+<body>
+<main>
+  <h1>Privacy Policy</h1>
+  <p class="updated">Darwin personal assistant &middot; last updated 28 September 2026</p>
+
+  <p>
+    Darwin is a single-user assistant, self-hosted by its owner on hardware the owner controls.
+    There are no other users and no accounts to create. This policy describes what happens to
+    Google account data when the owner connects their own Google account to it.
+  </p>
+
+  <h2>Data accessed</h2>
+  <p>With the owner's explicit consent, Darwin requests these Google scopes:</p>
+  <ul>
+    <li><strong>Gmail</strong> — read messages, apply labels, create drafts, and send mail on the owner's behalf.</li>
+    <li><strong>Google Calendar</strong> — read calendars and events, and create or edit events.</li>
+    <li><strong>Basic profile</strong> — email address and name, used only to confirm which account is connected.</li>
+  </ul>
+  <p>
+    Only the mailbox and calendars of the account that granted consent are accessed. Mail is sent
+    or modified only in response to an explicit instruction from the owner.
+  </p>
+
+  <h2>How the data is processed</h2>
+  <p>
+    Messages and events are fetched to the owner's own server, where they are summarised into a
+    private briefing. To produce those summaries and to extract facts, the content of messages and
+    events may be sent to third-party AI model providers — currently <strong>OpenAI</strong> and
+    <strong>Google Gemini</strong> — over encrypted connections, under those providers' API terms.
+    Facts derived from this content may be stored in a private database on the same server so the
+    assistant can recall context later.
+  </p>
+
+  <h2>What never happens</h2>
+  <ul>
+    <li>Data is never sold, rented, or used for advertising or profiling.</li>
+    <li>Data is never shared with any other person; the assistant has exactly one user.</li>
+    <li>No analytics, tracking, or third-party scripts run on this website.</li>
+    <li>Google data is not used to train any model.</li>
+  </ul>
+
+  <h2>Storage, retention and security</h2>
+  <p>
+    Data stays on the owner's server, which runs the assistant in isolated containers with
+    restricted network egress. Access tokens are stored with owner-only file permissions and are
+    never written to logs. Retrieved content and derived facts are kept until the owner deletes
+    them, and the owner can erase the local database at any time.
+  </p>
+
+  <h2>Revoking access</h2>
+  <p>
+    Access can be withdrawn at any time at
+    <a href="https://myaccount.google.com/permissions" rel="noopener">myaccount.google.com/permissions</a>.
+    Revoking immediately stops all further access to Gmail and Calendar. To also remove data
+    already retrieved, delete the assistant's local database, or ask using the contact address below.
+  </p>
+
+  <h2>Contact</h2>
+  <p>
+    Questions about this policy or about data handling: <code>webeonic@gmail.com</code>
+  </p>
+
+  <footer>
+    <a href="index.html">Home</a> &middot; personal project, not affiliated with Google
+  </footer>
+</main>
+</body>
+</html>
